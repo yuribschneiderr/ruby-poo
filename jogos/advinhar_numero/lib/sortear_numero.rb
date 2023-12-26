@@ -11,4 +11,8 @@ class SortearNumero
 
 		v.sample
 	end
+
 end
+
+end
+

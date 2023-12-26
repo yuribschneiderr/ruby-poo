@@ -25,5 +25,6 @@ class Inicializacao
 		sleep 1
 
 		system('clear')
+
 	end
 end
