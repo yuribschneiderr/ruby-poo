@@ -12,28 +12,11 @@ class JogoDaForca
     @erros = 0
   end
 
-  def chutar(letra)
-    chutes << letra
-    erros += 1 unless palavra.include?(letra)
-  end
-
-  def venceu?
-    palavra.split('').all? { |letra| chutes.include?(letra) }
-  end
-
-  def perdeu?
-    erros >= 6
-  end
-
-  def jogando?
-    !venceu? && !perdeu?
-  end
-
   def palavra_mascarada
     resultado = ''
     palavra.split('').each do |letra|
       if chutes.include?(letra)
-        resultado += letra
+        resultado += letra.upcase
       else
         resultado += '_'
       end
@@ -41,9 +24,27 @@ class JogoDaForca
     resultado
   end
 
+  def chutar(letra)
+    chutes << letra
+    self.erros = erros + 1 unless palavra.include?(letra)
+  end
+
+  def venceu?
+    palavra.split('').all? { |letra| chutes.include?(letra) }
+  end
+
+  def perdeu?
+    erros >= 7
+  end
+
+  def jogando?
+    !venceu? && !perdeu?
+  end
+
   def desenho_forca
     case erros
       when 1
+        puts "Você errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -53,6 +54,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 2
+        puts "Você errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -62,6 +64,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 3
+        puts "Você errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -71,6 +74,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 4
+        puts "Você errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -80,6 +84,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 5
+        puts "Você errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -89,6 +94,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 6
+        puts "Você errou seu chute, tente de novo.."        
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -98,6 +104,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
         when 7
+        puts "Você errou seu chute, acabou enforcado."          
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
