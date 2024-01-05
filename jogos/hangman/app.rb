@@ -9,7 +9,7 @@ sleep 1
 puts "\n"
 
 while jogo.jogando?
-  puts "Digite uma letra:\n\n"
+  puts "\nDigite uma letra:\n\n"
   puts jogo.palavra_mascarada
   chute = gets.chomp
   jogo.chutar(chute)
@@ -17,8 +17,9 @@ while jogo.jogando?
 end
 
 if jogo.venceu?
-  puts 'Parabéns, você venceu o jogo!'
+  puts "\nParabéns, você venceu o jogo!"
+  puts "\nA palavra é #{jogo.palavra.upcase} e você acertou!"
 else
-  puts 'Que pena, você perdeu...'
-  puts "A palavra era: #{jogo.palavra.upcase}"
+  puts "\nQue pena, você perdeu..."
+  puts "\nA palavra era: #{jogo.palavra.upcase}"
 end

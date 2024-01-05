@@ -4,7 +4,7 @@ class SortearPalavra
 
 		File.open(File.expand_path('../../palavras.txt', __FILE__), 'r') do |arq|
 			while line = arq.gets
-				v.push(line.to_s)
+				v.push(line.chomp)
 			end
 		end
 

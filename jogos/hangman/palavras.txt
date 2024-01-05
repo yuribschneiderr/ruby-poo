@@ -22,7 +22,6 @@ urso
 vombate
 wallaby
 xerus
-yak
 zebra
 abelha
 borboleta
@@ -84,7 +83,6 @@ elefante
 flamingo
 gorila
 hiena
-ibex
 jaguar
 kookaburra
 leao
@@ -92,9 +90,7 @@ marmota
 nutria
 ornitorrinco
 puma
-quokka
 rinoceronte
 suricata
 tucano
 urso
-vombate
