@@ -44,7 +44,7 @@ class JogoDaForca
   def desenho_forca
     case erros
       when 1
-        puts "Você errou seu chute, tente de novo.."
+        puts "\nVocê errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -54,7 +54,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 2
-        puts "Você errou seu chute, tente de novo.."
+        puts "\nVocê errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -64,7 +64,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 3
-        puts "Você errou seu chute, tente de novo.."
+        puts "\nVocê errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -74,7 +74,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 4
-        puts "Você errou seu chute, tente de novo.."
+        puts "\nVocê errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -84,7 +84,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 5
-        puts "Você errou seu chute, tente de novo.."
+        puts "\nVocê errou seu chute, tente de novo.."
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -94,7 +94,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
       when 6
-        puts "Você errou seu chute, tente de novo.."        
+        puts "\nVocê errou seu chute, tente de novo.."        
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
@@ -104,7 +104,7 @@ class JogoDaForca
         puts " |"
         puts "_|___"
         when 7
-        puts "Você errou seu chute, acabou enforcado."          
+        puts "\nVocê errou seu chute, acabou enforcado."          
         puts "  _______"
         puts " |/      |"
         puts " |      (_)"
